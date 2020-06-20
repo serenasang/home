@@ -1,0 +1,362 @@
+/* Formatting the image on the very top of every page */
+.container {
+	position: relative;
+	width: 100%;
+}
+/* Formatting the overlay text of the image on the very top of each page */
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: .5s ease;
+	background-color: #000000;
+}
+/* Formatting the image on the very top of each page */
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+	filter: blur(2px);
+}
+/* Formatting the text of the overlay on the top of every page */
+.text {
+	color: white;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+/* User interaction: changes the overlay opacity so the user can see it */
+.container:hover .overlay {
+	opacity: 1;
+}
+/* Formatting nagivation bar on the top */
+.topnav {
+	overflow: hidden;
+	background-color: #D3D3D3;
+}
+/* Formatting nagivation bar design */
+.topnav a {
+	float: left;
+	color: #474350;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+/* Formatting navigation bar design while hovering */
+.topnav a:hover {
+	background-color: #474350;
+	color: white;
+}
+/* Formatting nagivation bar section of the current page the user is on */
+.topnav a.active {
+	background-color: #819595;
+	color: white;
+}
+
+
+/* Formatting header design */
+.title{
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #819595;
+}
+/* Formatting text to be large */
+#large{
+	font-size:50px;
+}
+/* Formatting head 1 */
+h1
+{
+	color: #D4D6AB;
+	text-align: center;
+}
+/* Formatting the header for the entire page */
+h1.title{
+	font-size:50px;
+}
+/* Formatting the names of the people in opinions.html */
+.name_header{
+	color: #69B969;
+}
+h1.history{
+	color:black;
+}
+/* Formatting head 2 and unordered points */
+h2, ul{
+	text-align: center;
+	list-style-position: inside;
+}
+/* Formatting ordered points */
+ol{
+	list-style-type: upper-roman;
+	text-align: center;
+	list-style-position: inside;
+}
+/* Formatting body */
+body{
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+/* Formatting thematic breaks */
+hr{
+	width:25%;
+	height:2px;
+	background-color: #D0D0D0;
+	color: #D0D0D0;
+}
+.center_text{
+	text-align:center;
+}
+/* Formatting text design for mainly media section in help.html */
+.media_box{
+	background-color:#EBEBE4;
+	padding:20px 15px 20px 15px;
+	margin: 10px 0px 10px 0px;
+}
+/* Formatting text design */
+.text_box{
+	background-color:#EBE4EB;
+	padding:20px 15px 20px 15px;
+	margin: 10px 0px 10px 0px;
+	width: 95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* Text design for opinions.html */
+.response{
+	font-size: 10px;
+	background-color:#E4EBE4;
+	padding:5px;
+	margin: 20px 0px 20px 0px;
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+}
+.history_box{
+	background-color: #EBE4E4;
+	padding:20px 15px 20px 15px;
+	margin: 10px 0px 10px 0px;
+	width: 95%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+/* Table design for information */
+.information{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+/* Table design for header and data */
+.information td, #information th{
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/* Every even row is a different colour than the odd rows */
+.information tr:nth-child(even){
+	background-color: #f2f2f2;
+}
+/* Every even row is a different colour than the even rows */
+.information tr:nth-child(odd){
+	background-color: #dbdce6;
+}
+/* When the user hovers over the row, it turns into a different colour */
+.information tr:hover {
+	background-color: #ddd;
+}
+/* Table design for header */
+.information th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #819595;
+  color: white;
+  border: 1px;
+}
+/* Table design for smaller table with attribute from 'information' */
+#mini_table{
+	width:50%;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+
+/* Formatting embeded Spotify cards */
+iframe.spotify{
+	width:290px;
+	height:380px;
+}
+/* Formatting embeded YouTube trailer */
+iframe.trailer{
+	width:25%;
+	height:225px;
+	float: left;
+}
+/* Formatting embeded YouTube video */
+iframe.video{
+	width:560px;
+	height:315px;
+	margin-left:auto;
+	margin-right:auto;
+	display:block;
+}
+/* Designs the iframe for references.html */
+iframe.ref{
+	width:50%;
+	height:600px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/* Formatting the images in the middle of the page */
+.image_middle{
+	width: 50%;
+	margin: 20px 0px 20px 0px;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+/* Formatting images on the right of the page for help.html */
+img.media_right{
+	float:right;
+	width:20%;
+}
+/* Formatting images on the left of the page for help.html*/
+img.media_left{
+	float:left;
+	width:13%;
+}
+
+/* Formatting citations under images on the right of the page */
+.citation_right{
+	font-size:10px;
+	color:black;
+	clear:right;
+	text-align:right;
+}
+/* Formatting citations under images on the left of the page */
+.citation_left{
+	font-size:10px;
+	color:black;
+	clear:left;
+	text-align:left;
+}
+/* Formatting citations under images on the middle of the page */
+.citation_middle{
+	font-size:10px;
+	color:black;
+	text-align:center;
+}
+
+/* Formating the background for the citation in opinions.html */
+#citation_bg{
+	width: 75%;
+	background-color: #819595;
+	margin-bottom: 20px;
+	margin-left:auto;
+	margin-right:auto;
+}
+/* Formatting image of cops */
+img.cop{
+	width: 75%;
+	margin-top: 20px;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+img.black_history{
+	width: 50%;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+img.change{
+	width:70%;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+}
+/* Animating images from coloured to black and white */
+@keyframes filtered-image-animation{
+    from{
+        filter: grayscale(0%);
+    }
+    to{
+        filter: grayscale(100%);
+    }
+}
+/* Design for the animated image */
+.filtered-image{
+	width: 33%;
+	height: 250px;
+}
+/* User interaction: does the animation when the user hovers over the image */
+img.filtered-image:hover{
+    animation:filtered-image-animation 2s forwards;
+}
+
+/* Formatting the "Hover Over The Image" texts */
+.hover_over{
+	font-size:15px;
+	color:black;
+	text-align:center;
+}
+
+/* Animating images from black and white to coloured */
+@keyframes backwards-filtered-image-animation{
+    from{
+        filter: grayscale(100%);
+    }
+    to{
+        filter: grayscale(0%);
+    }
+}
+/* Design for the animated image */
+.backwards-filtered-image{
+	width: 50%;
+	height: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/* User interaction: does the animation when the user hovers over the image */
+img.backwards-filtered-image:hover{
+    animation:filtered-image-animation 5s forwards;
+}
+/* Formatting the background of opinions.html */
+.opinions_bg{
+	background-image: url('images/cops.jpg');
+	/* Creates scrolling effect */
+	background-repeat: no-repeat;
+	background-attachment: fixed;  
+	background-size: cover;
+	background-position: center;
+}
+/* Formats the image to be the background, even when scrolling */
+.parallax {
+	/* Full height */
+	height: 100%; 
+
+}
+/* Formatting the footer */
+footer{
+	background-color: #D3D3D3;
+	margin: 10px 0px 0px 0px;
+	padding: 0px 0px 10px 0px;
+}
+/* Formatting the footer text */
+#footer_text{
+	color:#008080;
+	font-size: 15px;
+	text-align: center;
+}
